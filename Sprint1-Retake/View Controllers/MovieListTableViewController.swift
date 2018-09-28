@@ -20,10 +20,18 @@ class MovieListTableViewController: UIViewController, MovieControllerProtocol, U
     
     // MARK: - View Lifecycle
 
-    override func viewDidLoad() {
+    override func viewDidLoad() { // call just once when app launch
         super.viewDidLoad()
 
+        tableView.dataSource = self // if set this here, don't need it in storyboard
         
+//        tableView.reloadData()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) { // call every time vc goes on
+        super.viewWillAppear(animated)
+        
+        tableView.reloadData()
     }
     
     // MARK: - MovieListTableVieCellDelegate
@@ -50,7 +58,7 @@ class MovieListTableViewController: UIViewController, MovieControllerProtocol, U
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MovieCell", for: indexPath) as! MovieListTableViewCell
         
-        guard let movie = movieController?.movies[indexPath.row] else { return cell }
+        let movie = movieController!.movies[indexPath.row]
         
         cell.movieLabel.text = movie.name
         
@@ -60,6 +68,8 @@ class MovieListTableViewController: UIViewController, MovieControllerProtocol, U
         } else {
             cell.isSeenButton.setTitle("Not Seen", for: .normal)
         }
+        
+        cell.delegate = self
         
         return cell
     }
