@@ -28,14 +28,14 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ho3-6x-2P4">
+                                                <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ho3-6x-2P4">
                                                     <rect key="frame" x="296" y="6" width="64" height="30"/>
                                                     <state key="normal" title="Not Seen"/>
                                                     <connections>
                                                         <action selector="isSeen:" destination="UAN-vO-syg" eventType="touchUpInside" id="1ec-Oo-sor"/>
                                                     </connections>
                                                 </button>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZUx-Vb-SqM">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZUx-Vb-SqM">
                                                     <rect key="frame" x="15" y="9" width="51" height="24"/>
                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                                                     <nil key="textColor"/>
@@ -45,7 +45,6 @@
                                             <constraints>
                                                 <constraint firstItem="ZUx-Vb-SqM" firstAttribute="top" secondItem="2Wg-vA-t4I" secondAttribute="top" constant="9" id="1Ku-0M-cuE"/>
                                                 <constraint firstAttribute="bottom" secondItem="ho3-6x-2P4" secondAttribute="bottom" constant="7.5" id="AOP-hf-6fy"/>
-                                                <constraint firstItem="ho3-6x-2P4" firstAttribute="leading" secondItem="ZUx-Vb-SqM" secondAttribute="trailing" constant="230" id="V2e-6l-lxd"/>
                                                 <constraint firstAttribute="bottom" secondItem="ZUx-Vb-SqM" secondAttribute="bottom" constant="10.5" id="Zc0-ZY-MeS"/>
                                                 <constraint firstItem="ZUx-Vb-SqM" firstAttribute="leading" secondItem="2Wg-vA-t4I" secondAttribute="leading" constant="15" id="kkG-Ye-U5D"/>
                                                 <constraint firstItem="ho3-6x-2P4" firstAttribute="top" secondItem="2Wg-vA-t4I" secondAttribute="top" constant="6" id="tiL-Ol-HBq"/>
