@@ -32,6 +32,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7GR-iz-VdZ">
                                 <rect key="frame" x="151" y="186" width="73" height="30"/>
                                 <state key="normal" title="Add Movie"/>
+                                <connections>
+                                    <action selector="addMovie:" destination="dwO-AO-KpS" eventType="touchUpInside" id="6en-l7-qqu"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -50,6 +53,9 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Add New Movies" id="CW1-lk-yAi"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="movieTextField" destination="kWE-XI-dXN" id="V1Z-mg-gPJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="orq-zK-OiP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

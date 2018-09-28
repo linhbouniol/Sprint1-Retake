@@ -8,23 +8,21 @@
 
 import UIKit
 
-class AddMoviesViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+class AddMoviesViewController: UIViewController, MovieControllerProtocol {
+    
+    // MARK: - Property
+    
+    var movieController: MovieController?
+    
+    // MARK: - Outlets/Actions
+    
+    @IBOutlet weak var movieTextField: UITextField!
+    
+    @IBAction func addMovie(_ sender: Any) {
+        
+        guard let name = movieTextField.text, name.count > 0 else { return }
+        
+        movieController?.createMovie(withName: name)
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
