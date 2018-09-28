@@ -12,6 +12,7 @@
 		3934469C215E7AC700B1B4EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3934469A215E7AC700B1B4EE /* Main.storyboard */; };
 		3934469E215E7AC800B1B4EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3934469D215E7AC800B1B4EE /* Assets.xcassets */; };
 		393446A1215E7AC800B1B4EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3934469F215E7AC800B1B4EE /* LaunchScreen.storyboard */; };
+		393446AC215E7CC400B1B4EE /* MovieListTabBarController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 393446AB215E7CC400B1B4EE /* MovieListTabBarController.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		3934469D215E7AC800B1B4EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		393446A0215E7AC800B1B4EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		393446A2215E7AC800B1B4EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		393446AB215E7CC400B1B4EE /* MovieListTabBarController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MovieListTabBarController.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +57,38 @@
 			isa = PBXGroup;
 			children = (
 				39344696215E7AC700B1B4EE /* AppDelegate.swift */,
-				39344698215E7AC700B1B4EE /* ViewController.swift */,
-				3934469A215E7AC700B1B4EE /* Main.storyboard */,
-				3934469D215E7AC800B1B4EE /* Assets.xcassets */,
-				3934469F215E7AC800B1B4EE /* LaunchScreen.storyboard */,
-				393446A2215E7AC800B1B4EE /* Info.plist */,
+				393446A8215E7BCB00B1B4EE /* View Controllers */,
+				393446AA215E7BE100B1B4EE /* Resources */,
 			);
 			path = "Sprint1-Retake";
+			sourceTree = "<group>";
+		};
+		393446A8215E7BCB00B1B4EE /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				39344698215E7AC700B1B4EE /* ViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		393446A9215E7BD600B1B4EE /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				3934469A215E7AC700B1B4EE /* Main.storyboard */,
+				3934469F215E7AC800B1B4EE /* LaunchScreen.storyboard */,
+				393446AB215E7CC400B1B4EE /* MovieListTabBarController.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		393446AA215E7BE100B1B4EE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				393446A9215E7BD600B1B4EE /* Storyboards */,
+				3934469D215E7AC800B1B4EE /* Assets.xcassets */,
+				393446A2215E7AC800B1B4EE /* Info.plist */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +152,7 @@
 				393446A1215E7AC800B1B4EE /* LaunchScreen.storyboard in Resources */,
 				3934469E215E7AC800B1B4EE /* Assets.xcassets in Resources */,
 				3934469C215E7AC700B1B4EE /* Main.storyboard in Resources */,
+				393446AC215E7CC400B1B4EE /* MovieListTabBarController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,7 +312,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 39ZVY2XGME;
-				INFOPLIST_FILE = "Sprint1-Retake/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Sprint1-Retake/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,7 +330,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 39ZVY2XGME;
-				INFOPLIST_FILE = "Sprint1-Retake/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Sprint1-Retake/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
