@@ -31,6 +31,9 @@
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ho3-6x-2P4">
                                                     <rect key="frame" x="296" y="6" width="64" height="30"/>
                                                     <state key="normal" title="Not Seen"/>
+                                                    <connections>
+                                                        <action selector="isSeen:" destination="UAN-vO-syg" eventType="touchUpInside" id="1ec-Oo-sor"/>
+                                                    </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZUx-Vb-SqM">
                                                     <rect key="frame" x="15" y="9" width="51" height="24"/>
@@ -49,6 +52,10 @@
                                                 <constraint firstAttribute="trailing" secondItem="ho3-6x-2P4" secondAttribute="trailing" constant="15" id="y6d-R3-TTc"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="isSeenButton" destination="ho3-6x-2P4" id="wrC-AP-4nJ"/>
+                                            <outlet property="movieLabel" destination="ZUx-Vb-SqM" id="h9D-zu-2vb"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
