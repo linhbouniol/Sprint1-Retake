@@ -24,7 +24,6 @@ class MovieListTableViewController: UIViewController, MovieControllerProtocol, U
         super.viewDidLoad()
 
         tableView.dataSource = self // if set this here, don't need it in storyboard
-        
 //        tableView.reloadData()
     }
     
