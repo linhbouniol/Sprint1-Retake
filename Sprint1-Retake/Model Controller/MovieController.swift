@@ -31,6 +31,11 @@ class MovieController {
         movie.isSeen = !movie.isSeen
         
         // Equatable, model needs to be a class with func ==()
+        
         // didn't work with struct
+            // need to get the index of the movie and modify it in the array directly
+//        guard let index = movies.index(of: movie) else { return }
+//        movies[index].isSeen = !movie.isSeen
+        
     }
 }
